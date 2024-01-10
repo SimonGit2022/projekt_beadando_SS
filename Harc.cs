@@ -214,7 +214,7 @@ namespace Path_to_Argon___Beta_v._2._0
                     {
                         Console.Write($"Hány elixirt kérsz:");
                         elixirek_szama = int.Parse(Console.ReadLine());
-                        while (elixirek_szama> jatekos.GetPenz() / elixir_ar || elixirek_szama < jatekos.GetPenz() / elixir_ar)//Ha, nem add, meg jó értéket.
+                        while (elixirek_szama> (jatekos.GetPenz() / elixir_ar) || elixirek_szama < 0)//Ha, nem add, meg jó értéket.
                         {
                             Console.WriteLine("Ennyit, nem tudsz venni!");
                             Console.Write("Probáld, újra:");
